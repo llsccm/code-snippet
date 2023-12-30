@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #248067, #126E82);
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px #0001;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, background 0.9s ease-in-out;
+}
+.card:hover {
+  transition: background 0.2s ease-in-out;
+}
+.card.instagram {
+  color: #cc93a4;
+}
+.card.instagram:hover {
+  color: white;
+  background: #cc93a4;
+}
+.card.twitter {
+  color: #03a9f4;
+}
+.card.twitter:hover {
+  color: white;
+  background: #03a9f4;
+}
+.card.dribbble {
+  color: #ffb5d2;
+}
+.card.dribbble:hover {
+  color: white;
+  background: #ffb5d2;
+}
+.card.codepen {
+  color: black;
+}
+.card.codepen:hover {
+  color: white;
+  background: black;
+}
+.card.linkedin {
+  color: #0077b5;
+}
+.card.linkedin:hover {
+  color: white;
+  background: #0077b5;
+}
+.card.discord {
+  color: #8c9eff;
+}
+.card.discord:hover {
+  color: white;
+  background: #8c9eff;
+}
+.card.github {
+  color: black;
+}
+.card.github:hover {
+  color: white;
+  background: black;
+}
+.card.telegram {
+  color: #29b6f6;
+}
+.card.telegram:hover {
+  color: white;
+  background: #29b6f6;
+}
+.card.reddit {
+  color: #ff5700;
+}
+.card.reddit:hover {
+  color: white;
+  background: #ff5700;
+}
+.main {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.main:hover {
+  gap: 5px;
+}
+.main:hover .card {
+  opacity: 1;
+}
+.main::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  line-height: 1.7rem;
+  letter-spacing: 0.3rem;
+  white-space: pre;
+  text-align: center;
+  background: linear-gradient(0deg, #0F95B0, #74759B);
+  border-radius: 10px;
+  box-shadow: inset 0 0 50px #fff, inset 0 0 30px #fff, inset 0 0 60px #fff;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+  content: 'HOVER \A FOR \A SOCIAL';
+}
+.main:hover::before {
+  z-index: -1;
+  opacity: 0;
+}
