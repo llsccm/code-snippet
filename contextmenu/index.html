@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    header h1 {
+      margin: 1em;
+      display: block;
+      text-align: center;
+      font-size: 3rem;
+      color: #fff;
+    }
+
+    header {
+      padding: 5px;
+      margin-bottom: 1em;
+
+      background-color: #159957;
+      background-image: -webkit-linear-gradient(30deg, #155799, #159957);
+      background-image: -o-linear-gradient(30deg, #155799, #159957);
+      background-image: linear-gradient(120deg, #155799, #159957);
+    }
+
+    main {
+      padding: 5px;
+      display: block;
+      height: calc(100% - 3em - 3em - 3em - 1em - 20px);
+    }
+
+    #cmenu {
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      background-color: #2980b9;
+      padding: 10px;
+      color: #fff;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="./dark.css" />
+</head>
+
+<body>
+  <div id="cmenu">右键菜单</div>
+</body>
+<script type="text/javascript" src="./contextmenu.js"></script>
+<script>
+  var menu
+  var cmen = [
+    {
+      text: 'Item 1',
+      sub: [
+        {
+          text: 'Item 11'
+        },
+        {
+          text: 'Item 12'
+        },
+        {
+          text: 'Item 13',
+          type: 'cm-divider',
+          enabled: false,
+          sub: [
+            {
+              text: 'Item 131'
+            }
+          ]
+        }
+      ]
+    },
+    {
+      text: 'Item 2',
+      events: {
+        click: function (e) {
+          alert(e)
+          e.stopPropagation()
+        }
+      }
+    }
+  ]
+
+  window.addEventListener('load', function () {
+    menu = new ContextMenu(cmen)
+
+    document.getElementById('cmenu').addEventListener('contextmenu', function (e) {
+      menu.display(e)
+    })
+  })
+</script>
+
+</html>
