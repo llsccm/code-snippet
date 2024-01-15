@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>underline</title>
+  <style>
+    .main {
+      width: 500px;
+    }
+
+    .text {
+      color: #000;
+      line-height: 2;
+      background: linear-gradient(to right, #1661AB, #15559a) right bottom no-repeat;
+      background-size: 0 2px;
+      transition: background-size 1s;
+    }
+
+    .main:hover .text {
+      background-position: left bottom;
+      background-size: 100% 2px;
+    }
+  </style>
+</head>
+
+<body>
+  <p class="main">
+    <span class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Dignissimos voluptates voluptas distinctio asperiores!
+      Inventore provident quos consequatur, a molestiae eos, explicabo doloribus temporibus, iure enim aspernatur culpa.
+      Reiciendis, aliquam dicta.
+    </span>
+  </p>
+</body>
+
+</html>
