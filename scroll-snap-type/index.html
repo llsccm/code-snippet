@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>scroll-snap-type</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow-y: auto;
+      border-radius: 5px;
+      scroll-snap-type: y mandatory;
+      scroll-behavior: smooth;
+    }
+
+    .section::-webkit-scrollbar {
+      display: none;
+    }
+
+    .section__item {
+      flex-shrink: 0;
+      height: 100%;
+      font-size: 1.5rem;
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+    }
+
+    .bg-1 {
+      background-color: #f1c2c6;
+    }
+
+    .bg-2 {
+      background-color: #dac2f1;
+    }
+
+    .bg-3 {
+      background-color: #ccf1c2;
+    }
+
+    .bg-4 {
+      background-color: #c2e9f1;
+    }
+
+    .bg-5 {
+      background-color: #f1ebc2;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="section">
+    <div class="section__item bg-1">Item 1</div>
+    <div class="section__item bg-2">Item 2</div>
+    <div class="section__item bg-3">Item 3</div>
+    <div class="section__item bg-4">Item 4</div>
+    <div class="section__item bg-5">Item 5</div>
+  </div>
+</body>
+
+</html>
