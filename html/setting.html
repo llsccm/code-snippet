@@ -1,0 +1,73 @@
+<div class=btzi-modal></div>
+<div class=btzi-container>
+  <div class=btzi-content>
+    <div class=btzi-header>
+      <h3 class=btzi-title>用户设置</h3>
+    </div>
+    <div class=btzi-body>
+      <form id=btzi_settings_form>
+        <fieldset class=btzi-group>
+          <legend class=btzi-legend>打开图片</legend>
+          <div class=btzi-controls><select class=btzi-select name=btzi[open]>
+              <option value=click>鼠标左键，单击图片</option>
+              <option value=dblclick>鼠标左键，双击图片</option>
+            </select></div>
+        </fieldset>
+        <fieldset class=btzi-group>
+          <legend class=btzi-legend>关闭图片</legend>
+          <div class=btzi-controls><select class=btzi-select name=btzi[close]>
+              <option value=click>鼠标左键，单击</option>
+              <option value=dblclick>鼠标左键，双击</option>
+            </select><select class=btzi-select name=btzi[closeWindow]>
+              <option value=btzi_gallery>图片，关闭单个图片</option>
+              <option value=document>页面，关闭所有图片</option>
+            </select></div>
+        </fieldset>
+        <fieldset class=btzi-group>
+          <legend class=btzi-legend>图片大小</legend>
+          <div class=btzi-controls><select class=btzi-select name=btzi[size]>
+              <option value=100>默认： 原始</option>
+              <option value=0>默认： 等比例适应屏幕</option>
+            </select></div>
+        </fieldset>
+        <fieldset class=btzi-group>
+          <legend class=btzi-legend>滚动图片</legend>
+          <div class=btzi-controls><select class=btzi-select name=btzi[wheelKey]>
+              <option value=type>组合键： 无</option>
+              <option value=ctrlKey>组合键： Ctrl</option>
+              <option value=altKey>组合键： Alt</option>
+              <option value=shiftKey>组合键： Shift</option>
+            </select><select class=btzi-select name=btzi[wheelDirection]>
+              <option value=1>滚轮向下，图片上/左移</option>
+              <option value=-1>滚轮向上，图片上/左移</option>
+            </select></div>
+        </fieldset>
+        <fieldset class=btzi-group>
+          <legend class=btzi-legend>缩放图片</legend>
+          <div class=btzi-controls><select class=btzi-select name=btzi[zoomKey]>
+              <option value=type>组合键： 无</option>
+              <option value=ctrlKey>组合键： Ctrl</option>
+              <option value=altKey>组合键： Alt</option>
+              <option value=shiftKey>组合键： Shift</option>
+            </select><select class=btzi-select name=btzi[zoomDirection]>
+              <option value=1>滚轮向下，图片放大</option>
+              <option value=-1>滚轮向上，图片放大</option>
+            </select></div>
+        </fieldset>
+        <fieldset class=btzi-group>
+          <legend class=btzi-legend>旋转图片</legend>
+          <div class=btzi-controls><select class=btzi-select name=btzi[rotateKey]>
+              <option value=type>组合键： 无</option>
+              <option value=ctrlKey>组合键： Ctrl</option>
+              <option value=altKey>组合键： Alt</option>
+              <option value=shiftKey>组合键： Shift</option>
+            </select><select class=btzi-select name=btzi[rotateDirection]>
+              <option value=1>滚轮向下，顺时针旋转</option>
+              <option value=-1>滚轮向上，顺时针旋转</option>
+            </select></div>
+        </fieldset>
+      </form>
+    </div>
+    <div class=btzi-footer><button class=btzi-button id=btzi_settings_save type=button>保存设置</button></div>
+  </div>
+</div>
