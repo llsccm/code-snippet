@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      margin: 0 auto;
+      width: 800px;
+      justify-content: center;
+    }
+
+    input {
+      outline: none;
+    }
+
+    input[type=text] {
+      font-family: inherit;
+      font-size: 0.875em;
+
+      border: solid 1px #ccc;
+      padding: 9px 10px 9px 15px;
+      width: 180px;
+
+      -webkit-border-radius: 10em;
+      -moz-border-radius: 10em;
+      border-radius: 10em;
+
+      -webkit-transition: all .6s;
+      -moz-transition: all .6s;
+      transition: all .6s;
+    }
+
+    input[type=text]:focus {
+      width: 31.667%;
+      background-color: #fff;
+      border-color: #6dcff6;
+
+      -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+      -moz-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+      box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+    }
+
+    input:-moz-placeholder {
+      color: #999;
+    }
+
+    input::-webkit-input-placeholder {
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <input type="text">
+  </div>
+  <!-- <a href="http://coverbox.henry-hu.com/">来源</a> -->
+</body>
+
+</html>
