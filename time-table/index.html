@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>time-table</title>
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <table id="capture">
+      <caption>
+        <h1>课程表</h1>
+      </caption>
+      <colgroup>
+        <col class="left-header" />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+      </colgroup>
+      <thead>
+        <tr>
+          <th></th>
+          <th>星期一</th>
+          <th>星期二</th>
+          <th>星期三</th>
+          <th>星期四</th>
+          <th>星期五</th>
+          <th>星期六</th>
+          <th>星期天</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="span">08-10</th>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+        </tr>
+        <tr>
+          <th class="span">10-12</th>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+        </tr>
+        <tr>
+          <th class="span">14-16</th>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+        </tr>
+        <tr>
+          <th class="span">16-18</th>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+        </tr>
+        <tr>
+          <th class="span">19-21</th>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+        </tr>
+
+      </tbody>
+    </table>
+    <div class="tool">
+      <div class="color-select" data-drop="move">
+        <div data-effect="copy" draggable="true" class="color1 item">汪</div>
+        <div data-effect="copy" draggable="true" class="color2 item">林</div>
+        <div data-effect="copy" draggable="true" class="color3 item">徐</div>
+        <div data-effect="copy" draggable="true" class="color4 item">李</div>
+        <div data-effect="copy" draggable="true" class="color5 item">潘</div>
+        <div data-effect="copy" draggable="true" class="color6 item"></div>
+        <div data-effect="copy" draggable="true" class="color7 item"></div>
+      </div>
+      <div class="color-picker">
+        <input type="color" id="newColor" value="#ff0000">
+        <input type="text" id="nameInput" placeholder="输入姓名">
+        <button onclick="addColorItem()">添加新颜色</button>
+      </div>
+      <button id="save">保存课程表</button>
+    </div>
+  </div>
+
+  <dialog id="myDialog">
+    <h2>确认删除？</h2>
+    <p>确定删除此颜色块？</p>
+    <form method="dialog">
+      <button id="confirmBtn" value="confirm">确认</button>
+      <button value="cancel">取消</button>
+    </form>
+  </dialog>
+
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>

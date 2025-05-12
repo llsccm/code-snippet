@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 12px 24px 24px;
+}
+
+.color1 {
+  background-color: #f8c3cd;
+}
+
+.color2 {
+  background-color: #126e82;
+}
+
+.color3 {
+  background-color: #ffb11b;
+}
+
+.color4 {
+  background-color: #bc84a8;
+}
+
+.color5 {
+  background-color: #86c166;
+}
+
+.color6 {
+  background-color: #ed5126;
+}
+
+.color7 {
+  background-color: #7e1671;
+}
+
+.item {
+  width: 120px;
+  height: 200px;
+  font-size: 24px;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 200px;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+caption {
+  background-color: #7cb342;
+}
+
+table td {
+  width: 120px;
+  height: 200px;
+  padding: 0;
+  border: 1px dashed rgba(0, 0, 0, 0.3);
+}
+
+thead {
+  height: 48px;
+  background-color: #f2f6f7;
+}
+
+th {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  user-select: none;
+}
+
+.drop-over {
+  background-color: #999;
+}
+
+.left-header {
+  width: 52px;
+  background-color: #f2f6f7;
+}
+
+.tool {
+  position: fixed;
+  top: 12px;
+  right: 20px;
+}
+
+.color-select {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6px;
+  justify-items: center;
+  user-select: none;
+}
+
+.color-picker {
+  padding: 10px;
+  background: #f5f5f5;
+  margin-bottom: 15px;
+}
+
+.color-picker input[type='color'] {
+  vertical-align: middle;
+  width: 40px;
+  height: 30px;
+}
+
+.color-picker input[type='text'] {
+  padding: 5px;
+  margin: 0 10px;
+}
